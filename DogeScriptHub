@@ -1,0 +1,159 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Doge Scripts | Key", HidePremium = true, IntroText = "Doge Scripts"})
+
+_G.Key = "HjqYikqa"
+_G.KeyInput = "string"
+
+function MakeScriptHub()
+    --PET SIM X
+if game.PlaceId == 6284583030 then
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Doge Scripts | Pet Sim X", HidePremium = true, IntroText = "Doge Scripts"})
+
+--Functions
+function HugeGames()
+    getgenv (). AuthKey = "HUGE_SwgLgjlEcX0U2I3k"
+getgenv (). LoadSettings ={
+UseSeperateSaves= false,
+DisableStartupPrompt= false,
+DisableGamepassCheck= false,
+}
+loadstring ( game : HttpGet ( "https://HugeGames.io/psx" ))()
+end
+function MilkUp()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a82cd5447cbbc4c7be0e8db405555787.lua"))()
+end
+function ProjectWD()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Main.lua"))()
+end
+
+--Main Tab
+local Main2 = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Main = Main2:AddSection({
+	Name = "Script last updated on May 6, 2023"
+})
+
+--AutoFarm+ Tabs
+local AutoFarms = Window:MakeTab({
+	Name = "AutoFarms",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+AutoFarms:AddButton({
+	Name = "Huge Games",
+	Callback = function()
+      		HugeGames()
+  	end    
+})
+AutoFarms:AddButton({
+	Name = "Milk Up",
+	Callback = function()
+      		MilkUp()
+  	end    
+})
+AutoFarms:AddButton({
+	Name = "Project WD | Key Required",
+	Callback = function()
+      		ProjectWD()
+  	end    
+})
+
+--JAILBREAK
+elseif game.PlaceId == 606849621 then
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Doge Scripts | Jailbreak", HidePremium = true, IntroText = "Doge Scripts"})
+
+--Functions
+function JailbreakerAutoRob()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5d4b0843f800d5dcac07568e18190b7e.lua"))()
+end
+function JailbreakerAutoArrest()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/13c61b19690eeef04abb4005c3689770.lua"))()
+end
+function FarmHubAutoCrate()
+    loadstring(game:HttpGet("https://fayy.gay/cratefarmfree.lua"))()
+end
+
+--Main Tab
+local Main = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local MainSection = Main:AddSection({
+	Name = "Script last updated on May 6, 2023"
+})
+
+--AutoRob Tab
+local AutoRobTab = Window:MakeTab({
+	Name = "AutoRob",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+AutoRobTab:AddButton({
+	Name = "Jailbreaker AutoRob",
+	Callback = function()
+      		JailbreakerAutoRob()
+  	end    
+})
+
+--AutoArrest Tab
+local AutoArrestTab = Window:MakeTab({
+	Name = "AutoArrest",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+AutoArrestTab:AddButton({
+	Name = "Jailbreaker AutoArrest",
+	Callback = function()
+      		JailbreakerAutoArrest()
+  	end    
+})
+
+--AutoCrate Tab
+local AutoCrateTab = Window:MakeTab({
+	Name = "AutoCrate",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+AutoCrateTab:AddButton({
+	Name = "FarmHub AutoCrate",
+	Callback = function()
+      		FarmHubAutoCrate()
+  	end    
+})
+
+end
+OrionLib:Init()
+end
+
+local Cool = Window:MakeTab({
+	Name = "Key",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Cool = Cool:AddSection({
+	Name = "Key in Discord : https://discord.gg/stmhtWpdXt"
+})
+
+Cool:AddTextbox({
+	Name = "Enter Key Here",
+	Default = "https://discord.gg/stmhtWpdXt",
+	TextDisappear = true,
+	Callback = function(Value)
+		_G.KeyInput = Value
+	end	  
+})
+
+Cool:AddButton({
+	Name = "Check Key!",
+	Callback = function()
+      	if _G.KeyInput == _G.Key then
+        MakeScriptHub()
+        end
+  	end    
+})
